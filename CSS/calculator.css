@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+
+.font-bold {
+    font-weight: bold;
+}
+.container .white {
+    background-color:white;
+    font-weight: bold;
+}
+.container .blue {
+    background-color: rgb(157, 157, 226);
+}
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+nav {
+    background-color: rgb(157, 157, 226);
+    text-align: center;
+    padding: 15px;
+    height: 160px;
+    font-size: 1.2rem;
+}
+nav div {
+    margin: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    width: 410px;
+    height: 500px;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid #eee ;
+    border-collapse: collapse;
+    background-color: #999;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container input {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+    font-size: 22px;
+    line-height: 44px;
+    height: 26%;
+    /* I set the height of the children of the container
+       26%,4%,70% respectively yet, they are still breaking 
+       out of their parent. Why?
+       NOTE: it is working fine for the flexbox container.
+
+    */
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(157, 157, 226, 0.4);
+    /* height: 0px !important; */
+}
+.container input::placeholder{
+    font-weight: bold;
+    font-size: 22px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.container  .div-text {
+    margin: 0 6px;
+    color: #000;
+    height: 4%;
+}
+
+/* Table calculator styling */
+.container-table div {
+    margin: 0 6px;
+}
+
+
+
+.container-table  table {
+    border: 1px;
+    width: 100%;
+    border-collapse: collapse;
+    height: 70%;
+}
+/* hr tag will be deleted soon */
+hr {
+    width: 15px;
+    margin: auto;
+}
+/* division span will be deleted soon */
+.division span{
+    display: block;
+}
+.container-table table  td {
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #999;
+    border-collapse: collapse;
+    background-color: #ddd;
+    margin: 2px;
+    color: black;
+    width: 25%;
+    /* why are the table cells on the first row longer than 
+       the other table cells on subsequent roles?
+    */
+}
+
+
+/* Flexbox Calculator Styling */
+.container-flex {
+    display: flex;
+    flex-direction: column;
+}
+.container-flex  .table {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+}
+.table div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 25%;
+    border: 3px solid #999;
+    background-color: #ddd;
+
+}

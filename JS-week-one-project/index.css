@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: url('./people.jpg') no-repeat center 
+    center/cover;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    background: rgba(3, 3, 3, 0.8);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 3rem;
+    position: relative;
+
+    animation: slideIn 2000ms linear;
+}
+@keyframes slideIn {
+    0% {
+        top : -300px
+    }
+    100% {
+        top: 0px;
+    }
+}
+button {
+    background-color: rgba(0, 0, 200, 1);
+    font-family: inherit;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 13px;
+    color: inherit;
+    margin-top: 20px;
+
+    transition: background-color 800ms ease-in-out,
+    box-shadow 500ms, transform 1000ms;
+}
+
+button:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 7px 8px rgba(0, 0, 0, 1);
+   
+}
+button:active {
+    transform: rotateX(360deg);
+}
+
+.user-profile.animate-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 2.4rem;
+    opacity: 0;
+    animation: opacity 1000ms ease 800ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
